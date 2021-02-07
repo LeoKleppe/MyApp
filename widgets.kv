@@ -52,7 +52,6 @@
 
 <loginwindowstart>:
     size: root.width, root.height
-    fontsize:fontsize
     testtext:testtext  
     Label:
         text: 'Les meg!'
@@ -152,7 +151,7 @@
         size: root.width / 6, root.height / 10
         font_size: root.width / 50 + root.height / 50 % 2
         pos_hint: {'x': 0.4, 'top': 0.13}
-        
+
     Button:
         text: 'Avbryt'
         on_release: root.close()
