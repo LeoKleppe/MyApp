@@ -510,7 +510,7 @@ class Mainwindow(Widget):
 		global showmenu
 		showmenu = Mainmenu()
 
-		showmenu = Popup(title="Menu", content=showmenu, size_hint=(None,None), size=((int(Witdh[1]) / 6), Height[0]), pos_hint={'y': 0, 'x':0})
+		showmenu = Popup(title="Menu", content=showmenu, size_hint=(None,None), size=((int(Witdh[1]) / 3), Height[0]), pos_hint={'y': 0, 'x':0})
 
 		showmenu.open()
 
@@ -533,7 +533,6 @@ class loginwindowstart(FloatLayout):
 
 	def close(self):
 		popupwindowstart.dismiss()
-
 
 class loginwindow(FloatLayout):
 	name = ObjectProperty(None)
