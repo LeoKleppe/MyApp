@@ -61,66 +61,89 @@
         pos_hint: {'x': 0.35, 'top': 1.1}
 
     Label:
-        text: ('Denne appen er hovedsaklig for folk med diabetes.')
+        text: ('Denne appen er hovedsaklig')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.2, 'top': 0.95}
+        pos_hint: {'x': 0.35, 'top': 0.95}
+
+    Label:
+        text: ('for folk med diabetes.')
+        size_hint: (0.3, 0.3)
+        font_size: 52
+        pos_hint: {'x': 0.35, 'top': 0.92}
 
     Label:
         text: ('I appen er det en Insulin kalkulator,')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.105, 'top': 0.9}
+        pos_hint: {'x': 0.35, 'top': 0.87}
 
     Label:
         text: ('matvare/matrett lagring og flere ting.')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.115, 'top': 0.85}
+        pos_hint: {'x': 0.35, 'top': 0.84}
 
     Label:
-        text: ('Appen bruker et 24 timers klokke system så når du')
+        text: ('Appen bruker et 24 timers')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.20, 'top': 0.78}
+        pos_hint: {'x': 0.35, 'top': 0.79}
 
     Label:
-        text: ('logger inn på siste side må du skrive i den formaten')
+        text: (' klokke system så når du')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.20, 'top': 0.73}
+        pos_hint: {'x': 0.35, 'top': 0.74}
+
+    Label:
+        text: ('logger inn på siste side må')
+        size_hint: (0.3, 0.3)
+        font_size: 52
+        pos_hint: {'x': 0.35, 'top': 0.71}
+
+    Label:
+        text: ('du skrive i den formaten')
+        size_hint: (0.3, 0.3)
+        font_size: 52
+        pos_hint: {'x': 0.35, 'top': 0.68}
 
     Label:
         text: ('Litt fakta om meg:')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0, 'top': 0.65}
+        pos_hint: {'x': 0, 'top': 0.63}
 
     Label:
-        text: ('Jeg begynnte å lage denne appen var jeg 14 år gammel,')
+        text: ('Jeg begynnte å lage denne')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.23, 'top': 0.59}
+        pos_hint: {'x': 0.35, 'top': 0.6}
 
     Label:
-        text: ('og jeg begynte på appen det året jeg fant ut at jeg hadde diabetes type 1.')
+        text: ('appen var jeg 14 år gammel,')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.34, 'top': 0.54}
+        pos_hint: {'x': 0.35, 'top': 0.57}
+
+    Label:
+        text: ('og jeg begynte på appen det året')
+        size_hint: (0.3, 0.3)
+        font_size: 52
+        pos_hint: {'x': 0.35, 'top': 0.54}
+
+    Label:
+        text: ('jeg fant ut at jeg hadde diabetes type 1.')
+        size_hint: (0.3, 0.3)
+        font_size: 52
+        pos_hint: {'x': 0.35, 'top': 0.51}
 
     Label:
         id: testtext
         text: ('Håper du får bruk for appen!')
         size_hint: (0.3, 0.3)
         font_size: 52
-        pos_hint: {'x': 0.33, 'top': 0.35}
-
-    Label:
-        text: ''
-        id: fontsize
-        font_size: 52
-        size_hint: (0.3, 0.3)
-        pos_hint: {'x': 0.6, 'top': 0.45}
+        pos_hint: {'x': 0.35, 'top': 0.35}
 
     Button:
         text: 'Neste'
@@ -129,17 +152,7 @@
         size: root.width / 6, root.height / 10
         font_size: root.width / 50 + root.height / 50 % 2
         pos_hint: {'x': 0.4, 'top': 0.13}
-
-    Slider:
-        min: 1
-        max: 100
-        value: 1
-        step: 1
-        orientation: 'horizontal'
-        size_hint: (0.4,0.2)
-        pos_hint: {'x': 0.15, 'top': 0.4}
-        on_value: root.sliderdeltall(*args)
-
+        
     Button:
         text: 'Avbryt'
         on_release: root.close()
