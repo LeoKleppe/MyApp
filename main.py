@@ -527,11 +527,19 @@ class MatretterPopup(FloatLayout):
 	pass
 		
 class loginwindowstart(FloatLayout):
+	antalldelingstall = 0
 	def neste(self):
 		showlogin1()
 
 	def close(self):
 		popupwindowstart.dismiss()
+
+	def sliderdeltall(self, *args):
+		global antalldelingstall
+
+		self.antalldelingstall = args[1]
+		self.testtext.font_size = str(int(args[1]))
+		self.fontsize.text = str(int(args[1]))
 
 class loginwindow(FloatLayout):
 	name = ObjectProperty(None)
