@@ -52,6 +52,8 @@
 
 <loginwindowstart>:
     size: root.width, root.height
+    fontsize:fontsize
+    testtext:testtext  
     Label:
         text: 'Les meg!'
         size_hint: (0.3, 0.3)
@@ -107,10 +109,18 @@
         pos_hint: {'x': 0.34, 'top': 0.54}
 
     Label:
+        id: testtext
         text: ('Håper du får bruk for appen!')
         size_hint: (0.3, 0.3)
-        font_size: root.width / 35
+        font_size: 15
         pos_hint: {'x': 0.33, 'top': 0.35}
+
+    Label:
+        text: ''
+        id: fontsize
+        font_size: 34
+        size_hint: (0.3, 0.3)
+        pos_hint: {'x': 0.6, 'top': 0.45}
 
     Button:
         text: 'Neste'
@@ -119,6 +129,16 @@
         size: root.width / 6, root.height / 10
         font_size: root.width / 50 + root.height / 50 % 2
         pos_hint: {'x': 0.4, 'top': 0.13}
+
+    Slider:
+        min: 1
+        max: 100
+        value: 1
+        step: 1
+        orientation: 'horizontal'
+        size_hint: (0.4,0.2)
+        pos_hint: {'x': 0.15, 'top': 0.4}
+        on_value: root.sliderdeltall(*args)
 
     Button:
         text: 'Avbryt'
