@@ -534,12 +534,6 @@ class loginwindowstart(FloatLayout):
 	def close(self):
 		popupwindowstart.dismiss()
 
-	def sliderdeltall(self, *args):
-		global antalldelingstall
-
-		self.antalldelingstall = args[1]
-		self.testtext.font_size = str(int(args[1]))
-		self.fontsize.text = str(int(args[1]))
 
 class loginwindow(FloatLayout):
 	name = ObjectProperty(None)
