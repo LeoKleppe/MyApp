@@ -514,7 +514,6 @@ class Mainwindow(Widget):
 
 		showmenu.open()
 
-
 class Mainmenu(FloatLayout):
 	def Min_matt(self):
 		global showmenu
@@ -599,7 +598,6 @@ class loginwindow(FloatLayout):
 	def close(self):
 		popupwindowstart.dismiss()
 		popupwindow.dismiss()
-
 
 class loginwindow2_1(FloatLayout):
 	deltalltext1 = ObjectProperty(None)
