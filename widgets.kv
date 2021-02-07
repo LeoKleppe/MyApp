@@ -51,19 +51,18 @@
 
 
 <loginwindowstart>:
+    size: root.width, root.height
     Label:
         text: 'Les meg!'
-        size_hint: (None, None)
-        size: root.width / 6, root.height / 10
-        font_size: (root.width / 50 + root.height / 50)
-        pos_hint: {'x': 0.35, 'top': 1}
+        size_hint: (0.3, 0.3)
+        font_size: root.width / 15
+        pos_hint: {'x': 0.35, 'top': 1.1}
 
     Label:
         text: ('Denne appen er for folk som har diabetes.\n' + 'I appen er det en Insulin kalkulator,\nmatvare lagring, sånn at du kan lagre fakta\nom middager, matretter og annet ting\n' + 'Appen bruker et 24 timers klokke system så når du\nlogger inn på siste side må du skrive i den formaten\n' + '\nLitt fakta om meg:\n' + 'Jeg begynnte å lage denne appen var jeg 14 år gammel,\n og jeg begynte på appen det året jeg fant ut at jeg hadde diabetes type 1.\n' + 'Håper du får bruk for appen!')
-        size_hint: (None, None)
-        size: root.width / 6, root.height / 10
-        font_size: (root.width / 60 + root.height / 60)
-        pos_hint: {'x': 0.37, 'top': 0.6}
+        size_hint: (0.3, 0.3)
+        font_size: root.width / 35
+        pos_hint: {'x': 0.35, 'top': 0.7}
 
     Button:
         text: 'Neste'
